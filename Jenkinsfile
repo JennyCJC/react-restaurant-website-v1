@@ -8,7 +8,7 @@ pipeline {
   stages {
     stage('Build Container') {
       steps {
-        sh "docker build -f DockerFile -t ${dockerImageTag} ."
+        sh "docker build -f Dockerfile -t ${dockerImageTag} ."
       }
     }
 
